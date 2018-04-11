@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+
+  <link href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+<style>
+  .overlay{
+    position: relative;
+  }
+  .flex-container>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  .flex-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: DodgerBlue;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 931px) {
+    .flex-container {
+      display: flex;
+      width: 100%;
+      margin-left: 0%;
+      flex-direction: row;
+      background-color: #f1f1f1;
+    }
+    .flex-item {
+      min-width: 33.3%;
+      width: 31% !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width:930px) {
+    .flex-container>div {
+      background-color: #f1f1f1;
+      max-width: 50%;
+      margin: 10px;
+      text-align: center;
+    }
+    .flex-container {
+      display: flex;
+      width: 100%;
+      margin-left: 0%;
+      flex-direction: row;
+      background-color: #f1f1f1;
+    }
+    .flex-item {
+      min-width: 50%;
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .flex-container {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin-left: 0%;
+      background-color: #f1f1f1;
+      flex-wrap: nowrap;
+    }
+    .flex-item {
+      min-width: 100%;
+      width: 100% !important;
+    }
+  }
+</style>
+
+<body>
+  <div class="navbar-default">
+    <div class="container navbars">
+      <ul class="pull-left nav">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Gallery</a>
+        </li>
+      </ul>
+      <ul class="pull-right nav">
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Sign Up</a>
+        </li>
+        <li>
+          <a href="#">Log In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="jumbotron">
+      <div class="overlay"style="
+
+      width: 100%;
+      margin: 0 auto;
+      lefT: 24%;">
+      <h1 style="color: white;font-family:  calibri;font-size: 5vw;">Kevin Every Photography</h1></div>
+    <div class="jumbo-container">
+    </div>
+  </div>
+
+  <div class="neighborhood-guides">
+    <div class="container-fluid">
+      <h1> Portfolio</h1>
+      <h2 id="demo1">Take a look at some of my most recent work below!</h2>
+      <p></p>
+      <div class="row flex-container">
+        <div class="thumbnail flex-item">
+          <img class="img-thumbnail img-fluid" src="block_pic1.png?qlt=65,0"></img>
+        </div>
+        <div class="thumbnail flex-item">
+          <img class="img-thumbnail img-fluid" src="block_pic2.jpg?qlt=65,0"></img>
+        </div>
+        <div class="thumbnail flex-item">
+          <img class="img-thumbnail img-fluid" src="block_pic3.jpg?qlt=65,0"></img>
+        </div>
+        <div class="thumbnail flex-item">
+          <img class="img-thumbnail img-fluid" src="block_pic4.jpg?qlt=65,0"></img>
+        </div>
+        <div class="thumbnail flex-item">
+          <img class="img-thumbnail img-fluid" src="block_pic5.jpg?qlt=65,0"></img>
+        </div>
+        <div class="thumbnail flex-item">
+          <img class="img-thumbnail img-fluid" src="block_pic6.jpg?qlt=65,0"></img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="learn-more">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>My Gear</h3>
+          <p>Find out what tools I use!</p>
+          <p>
+            <a href="#">Check it Out</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>Story</h3>
+          <p>Its you vs. 100 others! Time to get hacking!</p>
+          <p>
+            <a href="#">Watch and Learn</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h3>About Me</h3>
+          <p>Who is Kevin Every? Click below to find out!</p>
+          <p>
+            <a href="#">About Kevin</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="circletype.min.js"></script>
+  <script>
+    new CircleType(document.getElementById('message1'))
+      .radius(2200);
+  </script>
+</body>
+
+</html>
